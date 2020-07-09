@@ -6,6 +6,10 @@
 
 * https://unity.com/
 * https://en.wikipedia.org/wiki/Unity_(game_engine)
+* https://docs.unity3d.com/Manual/Unity2D.html
+* https://docs.unity3d.com/Manual/SpriteEditor.html
+* https://docs.unity3d.com/Manual/Tilemap-CreatingTiles.html
+* https://docs.unity3d.com/Manual/class-Tilemap.html
 
 #### Unity Scripting API Documentation
 
