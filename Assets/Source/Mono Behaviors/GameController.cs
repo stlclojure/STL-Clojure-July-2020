@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public Grid grid;
     public Tilemap tilemap;
 
+    public Tile bushTile;
     public Tile dirtTile;
     public Tile grassTile;
     public Tile waterTile;
@@ -39,6 +40,9 @@ public class GameController : MonoBehaviour
             SetTile(i, i, grassTile);
         for (int i = 0; i < 5; i++)
             SetTile(i, i + 1, dirtTile);
+        SetTile(1, 3, bushTile);
+        SetTile(1, 4, dirtTile);
+        SetTile(1, 4, bushTile);
     }
 
     // Update is called once per frame
