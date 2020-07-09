@@ -11,18 +11,21 @@ public class GameController : MonoBehaviour
 
     public void Resize(int x, int y)
     {
-        Debug.Log("tilemap size was " + tilemap.size);
         tilemap.size = new Vector3Int(x, y, 1);
-        Debug.Log("tilemap size is now " + tilemap.size);
+    }
+
+    public void FillWithTile(Tile tile)
+    {
+        for (int x = 0; x < tilemap.size.x; x++)
+            for (int y = 0; y < tilemap.size.y; y++)
+                tilemap.SetTile(new Vector3Int(x, y, 0), tile);
     }
 
     // Start is called before the first frame update
     void Start()
     {
         Resize(10, 10);
-        for (int x = 0; x < tilemap.size.x; x++)
-            for (int y = 0; y < tilemap.size.y; y++)
-                tilemap.SetTile(new Vector3Int(x, y, 0), waterTile);
+        FillWithTile(waterTile);
     }
 
     // Update is called once per frame
