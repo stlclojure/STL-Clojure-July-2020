@@ -7,6 +7,13 @@
 * https://unity.com/
 * https://en.wikipedia.org/wiki/Unity_(game_engine)
 
+#### Unity Scripting API Documentation
+
+* https://docs.unity3d.com/ScriptReference/index.html
+* https://docs.unity3d.com/ScriptReference/Grid.html
+* https://docs.unity3d.com/ScriptReference/Sprite.html
+* https://docs.unity3d.com/ScriptReference/Tilemaps.Tilemap.html
+
 ### Arcadia
 
 * https://github.com/arcadia-unity/Arcadia
