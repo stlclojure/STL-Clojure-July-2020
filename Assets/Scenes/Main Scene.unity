@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 1228610815}
   tilemap: {fileID: 782420494}
+  grassTile: {fileID: 11400000, guid: 3c001c2894f32da4bbf99999b3874267, type: 2}
   waterTile: {fileID: 11400000, guid: dd59c713bccda484e929c94b92d078fd, type: 2}
 --- !u!4 &305688657
 Transform:
