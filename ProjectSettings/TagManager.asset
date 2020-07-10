@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Vegetation
+    uniqueID: 1317330941
+    locked: 0
+  - name: World
+    uniqueID: 2299153849
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -32,6 +32,32 @@ public class GameController : MonoBehaviour
             vegetationTilemap.SetTile(new Vector3Int(x, y, 0), tile);
     }
 
+    public bool isTileAt(Tilemap tilemap, int x, int y, Tile tile)
+    {
+
+        return tilemap.GetTile(new Vector3Int(x, y, 0)) == tile;
+    }
+
+    public bool isWaterAt(int x, int y)
+    {
+        return isTileAt(worldTilemap, x, y, waterTile);
+    }
+
+    public bool isDirtAt(int x, int y)
+    {
+        return isTileAt(worldTilemap, x, y, dirtTile);
+    }
+
+    public bool hasGrassAt(int x, int y)
+    {
+        return isTileAt(vegetationTilemap, x, y, grassTile);
+    }
+
+    public bool hasBushAt(int x, int y)
+    {
+        return isTileAt(vegetationTilemap, x, y, bushTile);
+    }
+
     public void FillWithTile(Tile tile)
     {
         for (int x = 0; x < worldTilemap.size.x; x++)
@@ -45,10 +71,12 @@ public class GameController : MonoBehaviour
         Resize(10, 10);
         FillWithTile(waterTile);
         for (int i = 0; i < 10; i++)
-            SetTile(i, i, grassTile);
+            SetVegetation(i, i, grassTile);
         for (int i = 0; i < 5; i++)
             SetTile(i, i + 1, dirtTile);
+        Debug.Log("dirt? " + isDirtAt(1, 3));
         SetTile(1, 3, dirtTile);
+        Debug.Log("dirt? " + isDirtAt(1, 3));
         SetVegetation(1, 3, bushTile);
     }
 
