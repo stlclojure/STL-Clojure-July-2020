@@ -1,5 +1,7 @@
 # STL CLojure - July 2020
 
+* https://github.com/stlclojure/Arcadia-STLClojure-25apr2019
+
 ## Resources
 
 ### Unity
