@@ -24,6 +24,7 @@
 
 * https://github.com/arcadia-unity/Arcadia
 * http://arcadia-unity.github.io/
+* https://github.com/arcadia-unity/Arcadia/wiki/Getting-Started
 
 ### Zelda-like tilesets and sprites
 
